@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_original"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/strut"
+        android:layout_alignParentTop="true"
+        android:focusable="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_recall"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/strut"
+        android:layout_alignParentBottom="true"
+        android:focusable="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.example.cardapplication.ControlBall
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_height="200dp"
+        android:layout_width="200dp">
+
+    </com.example.cardapplication.ControlBall>
+
+    <Button
+        android:id="@+id/shuffle"
+        android:text="@string/ok"
+        android:textSize="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="40dp"
+        android:focusable="false"
+        android:textColor="@drawable/text_color"
+        android:background="@drawable/button_color"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="onOK"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/next"-->
+        <!--android:text="@string/next"-->
+        <!--android:textSize="50sp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="40dp"-->
+        <!--android:focusable="false"-->
+        <!--android:textColor="@drawable/text_color"-->
+        <!--android:background="@drawable/button_color"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:onClick="onNext"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/up"-->
+        <!--android:text="UP"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_alignBottom="@+id/recycler_view_card"-->
+        <!--android:layout_alignLeft="@+id/preview"-->
+        <!--android:layout_margin="40dp"-->
+        <!--android:focusable="false"-->
+        <!--android:background="@drawable/button_color"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:onClick="onUp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/down"-->
+        <!--android:text="DOWN"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_alignBottom="@+id/recycler_view_card"-->
+        <!--android:layout_alignRight="@+id/next"-->
+        <!--android:layout_margin="40dp"-->
+        <!--android:focusable="false"-->
+        <!--android:background="@drawable/button_color"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:onClick="onDown" />-->
+
+</RelativeLayout>
